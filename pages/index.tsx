@@ -4,6 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import { Url } from 'url'
+import About from '../components/about'
+import User from '../components/user'
 
 
 const Home: NextPage = () => {
@@ -23,11 +25,15 @@ const Home: NextPage = () => {
           </h1>
   
           <p className={styles.description}>
-            Sign in as { session.user && session.user.name}<br />
+            Sign in as { session.user?.name}<br />
             <button onClick={() => signOut()}>Sign out</button>
           </p>
   
           <div className={styles.grid}>
+            <div className={styles.card}><About /></div>
+
+            <div className={styles.card}><User /></div>
+  
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Documentation &rarr;</h2>
               <p>Find in-depth information about Next.js features and API.</p>
