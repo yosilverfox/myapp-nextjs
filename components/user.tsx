@@ -26,7 +26,6 @@ export default function User() {
         return (
             <>
                 {user ? <div>メールアドレス：{user['email']}</div> : <button onClick={FetchUser}>ユーザー情報を取得</button>}
-                {/* {user['username']} */}
             </>
         )
     }
