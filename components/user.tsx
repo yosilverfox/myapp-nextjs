@@ -25,8 +25,10 @@ export default function User() {
     if (session) {
         return (
             <>
-                {user ? <div>メールアドレス：{user['email']}</div> : <button onClick={FetchUser}>ユーザー情報を取得</button>}
+                {user ? <div>メールアドレス：{user['email']}</div> : <button onClick={FetchUser}>メールアドレスを確認</button>}
             </>
         )
+    } else {
+        return (<></>)
     }
 }
