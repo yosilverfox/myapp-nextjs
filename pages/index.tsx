@@ -34,6 +34,11 @@ const Home: NextPage = () => {
 
             <div className={styles.card}><User /></div>
   
+            <a href="/Rakuten/books" className={styles.card}>
+              <h2>楽天ブックス検索 &rarr;</h2>
+              <p>楽天ブックスで電子書籍（楽天Kobo）を検索</p>
+            </a>
+  
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h2>Documentation &rarr;</h2>
               <p>Find in-depth information about Next.js features and API.</p>
