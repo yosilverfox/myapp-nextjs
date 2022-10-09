@@ -15,7 +15,7 @@ interface Book {
 export default function Book(props: Book) {
     return (
         <div className={styles.book}>
-            <Image src={props.image} alt={props.title} />
+            <img src={props.image} alt={props.title} />
             <div className={styles.info}>
                 <div className={styles.salesDate}>{props.salesDate}</div>
                 <div className={styles.title}>{props.title}</div>

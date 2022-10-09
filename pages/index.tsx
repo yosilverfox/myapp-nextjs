@@ -34,54 +34,18 @@ const Home: NextPage = () => {
 
             <div className={styles.card}><User /></div>
   
-            <Link href="/Rakuten/books" className={styles.card}>
-              <h2>楽天ブックス検索 &rarr;</h2>
-              <p>楽天ブックスで電子書籍（楽天Kobo）を検索</p>
-            </Link>
-  
-            <Link href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </Link>
-  
-            <Link href="https://nextjs.org/learn" className={styles.card}>
-              <h2>Learn &rarr;</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </Link>
-  
-            <Link
-              href="https://github.com/vercel/next.js/tree/canary/examples"
-              className={styles.card}
-            >
-              <h2>Examples &rarr;</h2>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </Link>
-  
-            <Link
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h2>Deploy &rarr;</h2>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </Link>
+            <div className={styles.card}>
+              <Link href="/Rakuten/books" className={styles.card}>
+                <a>
+                  楽天ブックス検索 &rarr;<br />
+                  楽天ブックスで電子書籍（楽天Kobo）を検索
+                </a>
+              </Link>
+            </div>
           </div>
+
         </main>
-  
-        <footer className={styles.footer}>
-          <Link
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <span className={styles.logo}>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-            </span>
-          </Link>
-        </footer>
-      </div>
+        </div>
     )
   }
   return (
