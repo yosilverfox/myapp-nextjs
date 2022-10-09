@@ -23,7 +23,7 @@ export default function Book(props: Book) {
                 <div className={styles.publisher}>{props.publisher}</div>
                 <div>{props.price} 円</div>
             </div>
-            <a href={props.productUrl} target="_blank" rel="noopener noreferrer"><button>購入ページ</button></a>
+            <a href={props.productUrl} target="_blank" rel="noreferrer"><button>購入ページ</button></a>
         </div>
     )
 }
