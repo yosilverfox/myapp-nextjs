@@ -1,4 +1,6 @@
 import styles from '../styles/Rakuten/books.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
 
 interface Book {
     author: string
@@ -13,7 +15,7 @@ interface Book {
 export default function Book(props: Book) {
     return (
         <div className={styles.book}>
-            <img src={props.image} alt={props.title} />
+            <Image src={props.image} alt={props.title} />
             <div className={styles.info}>
                 <div className={styles.salesDate}>{props.salesDate}</div>
                 <div className={styles.title}>{props.title}</div>
@@ -21,7 +23,7 @@ export default function Book(props: Book) {
                 <div className={styles.publisher}>{props.publisher}</div>
                 <div>{props.price} 円</div>
             </div>
-            <a href={props.productUrl} target="_blank"><button>購入ページ</button></a>
+            <Link href={props.productUrl} target="_blank"><button>購入ページ</button></Link>
         </div>
     )
 }
