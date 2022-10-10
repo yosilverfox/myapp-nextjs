@@ -5,7 +5,8 @@ import axios from "axios"
 
 
 // バックエンドAPIの設定
-const url = 'http://127.0.0.1:8000/users/me'
+// const url = 'http://127.0.0.1:8000/users/me'
+const url = 'https://myapp-fastapi.herokuapp.com/users/me'
 let headers = {
     'Authorization': ''
 }

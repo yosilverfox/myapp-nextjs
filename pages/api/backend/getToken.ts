@@ -4,7 +4,8 @@ import { getToken } from 'next-auth/jwt'
 
 
 // バックエンドの変数
-const tokenUrl = 'http://127.0.0.1:8000/token'
+// const tokenUrl = 'http://127.0.0.1:8000/token'
+const tokenUrl = 'https://myapp-fastapi.herokuapp.com//token'
 const headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
 }
