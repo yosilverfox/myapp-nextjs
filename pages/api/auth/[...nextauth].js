@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 // バックエンドの設定
-const tokenUrl = process.env.BACKEND_TOKEN_URL
+const tokenUrl = process.env.NEXT_PUBLIC_BACKEND_ROOT + '/token'
 const headers = process.env.BACKEND_TOKEN_HEADERS
 const body = `username=${process.env.BACKEND_USERNAME}&password=${process.env.BACKEND_PASSWORD}`
 

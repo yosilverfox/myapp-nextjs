@@ -14,7 +14,7 @@ interface Inputs {
 
 // バックエンドAPIの設定
 // const url = 'http://127.0.0.1:8000/rakuten/search/books'
-const url = 'https://myapp-fastapi.herokuapp.com//rakuten/search/books'
+const url = process.env.NEXT_PUBLIC_BACKEND_ROOT + '/rakuten/search/books'
 let headers = {
     'Authorization': ''
 }
